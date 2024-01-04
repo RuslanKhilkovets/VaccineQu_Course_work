@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;700&family=Ubuntu:wght@500&display=swap');@import 'base/*.scss';
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600&family=Raleway:wght@700&family=Roboto:wght@400;700&family=Ubuntu:wght@500&display=swap');
 @import 'global/*.scss';
 @import '**/_*.scss';
 @import '../components/**/*.scss';
 
 
-body{
-    overflow: hidden;
-}
+
 
 ul li{
     list-style: none;
@@ -20,6 +18,7 @@ ul{
     padding-block-start: 0;
     margin-block-start: 0;
 }
+
 *{
     font-family: Ubuntu;
 }
@@ -40,7 +39,6 @@ ul{
 }
 
 .default-btn{
-    width: max-content;
     border-radius: 0.625rem;
     background: #FE4610;
     padding: 1rem 1.81rem;
@@ -49,6 +47,7 @@ ul{
     transition: .4s;
     &__text{
         color: #fff;
+        text-align: center;
     }
     &:hover{
         background-color: transparent;
@@ -60,8 +59,30 @@ ul{
     }
 }
 
-.second-btn {
+.default-btn-disabled{
+    border-radius: 0.625rem;
+    background: #ffffff;
+    padding: 1rem 1.81rem;
+    border: 1px solid  #B9C0C1;
+    cursor: pointer;
+    transition: .4s;
+    &__text{
+        transition: .4s;
 
-    &__text {
+        color: #B9C0C1;
+        font-family: Ubuntu;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;    
+    }
+    &:hover{
+        background-color: transparent;
+        border: 1px solid #FE4610;
+        transition: .4s;
+    }
+    &:hover &__text{
+        transition: .4s;
+        color: #000;
     }
 }

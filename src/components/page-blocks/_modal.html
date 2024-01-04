@@ -1,39 +1,51 @@
 <div class="modal">
     <div class="modal-content">
         <div class="modal-content__close">
-            <button class="open-modal modal-content__close-btn">X</button>
+            <button class="open-modal modal-content__close-btn"></button>
         </div>
         <p class="modal-content__title">
             Login 
         </p>
-        <form action="" class="modal-content__form">
-            <div class="modal-content__input-container">
-                <label for="modal-name">Ім'я</label>
-                <input type="text" id="modal-name" class="modal-content__input">
-            </div>
-            <div class="modal-content__input-container">
-                <label for="modal-phone">Телефон</label>
-                <input type="text" id="modal-phone" class="modal-content__input">
-            </div>
-            <div class="modal-content__input-container">
-                <label for="modal-email">Пошта</label>
-                <input type="email" id="modal-email" class="modal-content__input">
-            </div>
-            <div class="modal-content__input-container">
-                <label for="modal-comment">Коментар</label>
-                <input type="text" id="modal-comment" class="modal-content__input modal-content__input--textarea" placeholder="Введіть текст">
-            </div>
-            <div class="modal-content__input-container">
-                <input type="checkbox" id="modal-policies" class="modal-content__input" placeholder="Введіть текст">
-                <label for="modal-policies">Погоджуюся з розсилкою та приймаю Умови договору</label>
-            </div>
-            <div class="modal-content__send-btn">
-                <button class="button">
-                    <p class="button__text">
-                        Відправити
+        <p class="modal-content__subtitle">How do I get started now</p>
+        <div class="modal-content__wrapper">
+            <form action="" class="modal-content__form">
+                <div class="modal-content__input-container">
+                    <label for="modal-email" class="modal-content__input-label">Email</label>
+                    <input type="text" id="modal-email" placeholder="Input email" class="modal-content__input">
+                </div>
+                <div class="modal-content__input-container">
+                    <label for="modal-password" class="modal-content__input-label">Password</label>
+                    <input type="text" placeholder="Enter your password" id="modal-password" class="modal-content__input">
+                </div>
+                <p class="modal-content__forgot">
+                    Forgot password?
+                </p>
+                <div class="modal-content__btns">
+                    <button class="default-btn modal-content__btn">
+                        <p class="default-btn__text">
+                            Login
+                        </p>
+                    </button>
+                    <div class="modal-content__other-services">
+                        <p class="modal-content__other-services--text">
+                            or signin with
+                        </p>
+                    </div>
+                    <button class="default-btn-disabled modal-content__btn">
+                        <p class="default-btn-disabled__text">
+                            Login With Google 
+                        </p>
+                    </button>
+                    <button class="default-btn-disabled modal-content__btn">
+                        <p class="default-btn-disabled__text">
+                            Login With Facebook
+                        </p>
+                    </button>
+                    <p class="modal-content__havent-acc">
+                        You haven’t accoun? Signup
                     </p>
-                </button>
-            </div>
-        </form>
+                </div>
+            </form>
+        </div>
     </div>
 </div>

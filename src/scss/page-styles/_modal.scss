@@ -1,6 +1,6 @@
 .modal {
 	display: flex;
-	transform: translateY(-100%);
+	transform: translateY(-150%);
     position: fixed;
 	z-index: 9999;
 	width: 100%;
@@ -9,30 +9,36 @@
     align-items: center;
 	animation: modal .3s ease;
 	transition: .3s;
-	background: rgba(0, 0, 0, 0.20);
-
+	animation: modal .3s;
+	background-color: #FFE1D8;
 }
+
 .modal--active{
 	transform: translateY(0);
 }
 
 .modal-content {
-	&__close{
-		display: flex;
-		justify-content: flex-end;
-	}
 	margin: 0 10px;
-	width: min(528px, 100%);
+	width: min(45rem, 100%);
 	padding: 10px 40px 40px;
 	border-radius: 4px;
 	background: #FFF;
 	box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-	&__close-button {
+	&__wrapper{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__close{
+		display: flex;
+		justify-content: flex-end;
+	}
+	&__close-btn {
 		border: 1px solid rgba(0, 0, 0, 0.10);
 		cursor: pointer;
 		display: flex;
-		width: 30px;
-		height: 30px;
+		width: 35px;
+		height: 35px;
 		border-radius: 50%;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -41,84 +47,111 @@
 	}
 
 	&__title {
-		text-align: center;
-		color: #212121;
-		text-align: center;
-		font-family: Roboto;
-		font-size: 20px;
+		color: #001F29;
+		font-family: Ubuntu;
+		font-size: 2rem;
 		font-style: normal;
 		font-weight: 700;
-		line-height: 30px; 
-		letter-spacing: 0.6px;
+		line-height: normal;
 	}
-
+	&__subtitle{
+		margin: 10px 0;
+		color: #B9C0C1;
+		font-size: 1rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
 	&__form {
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
+		width: 100%;
+		margin: 30px;
 	}
 
 	&__input-container {
 		display: flex;
 		flex-direction: column;
+		gap: 10px;
+		width: 100%;
+		align-items: center;
 	}
 
 	&__input {
+		width: min(100%, 24.1875rem);
+		padding: 20px;
 		border-radius: 4px;
 		border: 1px solid rgba(33, 33, 33, 0.20);
-		padding: 11px;
-		height: 100%;
-		font-family: Roboto;
-		font-size: 12px;
+		color: #ABADAD;
+		font-family: Ubuntu;
+		font-size: 1rem;
 		font-style: normal;
 		font-weight: 400;
 		line-height: normal;
-		letter-spacing: 0.12px;
 	}
 
-	&__input--textarea{
-		min-height: 96px;
-	}
 	&__input-label{
-		color: #757575;
-		font-family: Roboto;
-		font-size: 12px;
+		color: #ABADAD;
+		font-family: Ubuntu;
+		font-size: 0.875rem;
 		font-style: normal;
 		font-weight: 400;
 		line-height: normal;
-		letter-spacing: 0.12px;
 	}
-	&__input-checkbox-container{
-		display: flex;
-		gap: 7px;
-	}
-	&__send-btn{
+
+	&__btns{
 		margin-top: 40px;
 		display: flex;
 		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		gap: 1.5rem;
 	}
-	&__send-btn button{
-		padding: 10px 52px;
-		
+	&__btn{
+		width: 24rem;
 	}
-	&__input-label{
-		color: #757575;
-		font-family: Roboto;
-		font-size: 12px;
+	&__forgot{
+		text-align: right;
+		color: #F75532;
+		font-size: 1rem;
 		font-style: normal;
 		font-weight: 400;
 		line-height: normal;
-		letter-spacing: 0.12px;
 	}
-}
-
-
-@keyframes modal{
-	0%{
-		opacity: 0;
-
+	&__other-services{
+		width: 100%;
+		text-align: center;
+		padding: 1.5rem 0;
 	}
-	100%{
-		opacity: 1;
+	&__other-services--text{
+		color: #B9C0C1;
+		font-size: 1.125rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		position: relative;
+		&::before, &:after{
+			content: "";
+			position: absolute;
+			width: 35%;
+			height: 2px;
+			background-color: #B9C0C1;
+			top: 50%;
+		}
+		&:before{
+			left: 0;
+		}
+		&:after{
+			right: 0;
+		}
+	}
+	&__havent-acc{
+		text-align: center;
+		color:#B9C0C1;
+		font-size: 1rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
 	}
 }

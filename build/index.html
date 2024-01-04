@@ -13,40 +13,52 @@
 		<div class="modal">
     <div class="modal-content">
         <div class="modal-content__close">
-            <button class="open-modal modal-content__close-btn">X</button>
+            <button class="open-modal modal-content__close-btn"></button>
         </div>
         <p class="modal-content__title">
             Login 
         </p>
-        <form action="" class="modal-content__form">
-            <div class="modal-content__input-container">
-                <label for="modal-name">Ім'я</label>
-                <input type="text" id="modal-name" class="modal-content__input">
-            </div>
-            <div class="modal-content__input-container">
-                <label for="modal-phone">Телефон</label>
-                <input type="text" id="modal-phone" class="modal-content__input">
-            </div>
-            <div class="modal-content__input-container">
-                <label for="modal-email">Пошта</label>
-                <input type="email" id="modal-email" class="modal-content__input">
-            </div>
-            <div class="modal-content__input-container">
-                <label for="modal-comment">Коментар</label>
-                <input type="text" id="modal-comment" class="modal-content__input modal-content__input--textarea" placeholder="Введіть текст">
-            </div>
-            <div class="modal-content__input-container">
-                <input type="checkbox" id="modal-policies" class="modal-content__input" placeholder="Введіть текст">
-                <label for="modal-policies">Погоджуюся з розсилкою та приймаю Умови договору</label>
-            </div>
-            <div class="modal-content__send-btn">
-                <button class="button">
-                    <p class="button__text">
-                        Відправити
+        <p class="modal-content__subtitle">How do I get started now</p>
+        <div class="modal-content__wrapper">
+            <form action="" class="modal-content__form">
+                <div class="modal-content__input-container">
+                    <label for="modal-email" class="modal-content__input-label">Email</label>
+                    <input type="text" id="modal-email" placeholder="Input email" class="modal-content__input">
+                </div>
+                <div class="modal-content__input-container">
+                    <label for="modal-password" class="modal-content__input-label">Password</label>
+                    <input type="text" placeholder="Enter your password" id="modal-password" class="modal-content__input">
+                </div>
+                <p class="modal-content__forgot">
+                    Forgot password?
+                </p>
+                <div class="modal-content__btns">
+                    <button class="default-btn modal-content__btn">
+                        <p class="default-btn__text">
+                            Login
+                        </p>
+                    </button>
+                    <div class="modal-content__other-services">
+                        <p class="modal-content__other-services--text">
+                            or signin with
+                        </p>
+                    </div>
+                    <button class="default-btn-disabled modal-content__btn">
+                        <p class="default-btn-disabled__text">
+                            Login With Google 
+                        </p>
+                    </button>
+                    <button class="default-btn-disabled modal-content__btn">
+                        <p class="default-btn-disabled__text">
+                            Login With Facebook
+                        </p>
+                    </button>
+                    <p class="modal-content__havent-acc">
+                        You haven’t accoun? Signup
                     </p>
-                </button>
-            </div>
-        </form>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 		<header class="header">
@@ -149,10 +161,331 @@
         </div>
     </div>
 </section>
+			<div class="vaccines">
+    <div class="global-container">
+        <div class="vaccines__wrapper">
+            <ul class="vaccines__list">
+                <li class="vaccines__item vaccine">
+                    <div class="vaccine__head">
+                        <p class="vaccine__title">
+                            Sinovac
+                        </p>
+                        <p class="vaccine__subtitle">
+                            Necessary making this
+                        </p>
+                    </div>
+                    <div class="vaccine__get">
+                        <div class="default-btn">
+                            <div class="default-btn__text">Get Vaccine</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="vaccines__item vaccine">
+                    <div class="vaccine__head">
+                        <p class="vaccine__title">
+                            Astrazeneca
+                        </p>
+                        <p class="vaccine__subtitle">
+                            Necessary making this
+                        </p>
+                    </div>
+                    <div class="vaccine__get">
+                        <div class="default-btn">
+                            <div class="default-btn__text">Get Vaccine</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="vaccines__item vaccine">
+                    <div class="vaccine__head">
+                        <p class="vaccine__title">
+                            Sinopahrm
+                        </p>
+                        <p class="vaccine__subtitle">
+                            Necessary making this
+                        </p>
+                    </div>
+                    <div class="vaccine__get">
+                        <div class="default-btn">
+                            <div class="default-btn__text">Get Vaccine</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="vaccines__dots">
+                
+            </div>
+        </div>
+    </div>
+    <div class="vaccines__types vaccines-types">
+        <ul class="vaccines-types__list">
+            <li class="vaccines-types__item">
+                <p class="vaccines-types__text">VACCINESIN</p>
+            </li>
+            <li class="vaccines-types__item">
+                <p class="vaccines-types__text">AstraVac</p>
+            </li>
+            <li class="vaccines-types__item">
+                <p class="vaccines-types__text">HealthVaccine</p>
+            </li>            
+            <li class="vaccines-types__item">
+                <p class="vaccines-types__text">SimpAcine</p>
+            </li>
+        </ul>
+    </div>
+</div>
+			<div class="schedule">
+    <div class="global-container">
+
+        <div class="schedule__wrapper">
+            <p class="schedule__title">
+                Schedule Vaccination
+            </p>
+            <form action="#" class="schedule__form">
+                <ul class="schedule__list">
+                    <li class="schedule__item schedule-item">
+                        <div class="schedule-item__head">
+                            <div class="schedule-item__icon">
+                                
+                            </div>
+                            <div class="schedule-item__title">
+                                Location
+                            </div>
+                        </div>
+                        <div class="schedule-item__input">
+                            <input class="schedule-item__input-input" type="text" placeholder="Jakarta, Indonesia">
+                        </div>
+                    </li>
+                    <li class="schedule__item schedule-item">
+                        <div class="schedule-item__head">
+                            <div class="schedule-item__icon">
+    
+                            </div>
+                            <div class="schedule-item__title">
+                                Date
+                            </div>
+                        </div>
+                        <div class="schedule-item__input">
+                            <input class="schedule-item__input-input" type="text" placeholder="25 June, 2021">
+                        </div>
+                    </li>
+                    <li class="schedule__item schedule-item">
+                        <div class="schedule-item__head">
+                            <div class="schedule-item__icon">
+    
+                            </div>
+                            <div class="schedule-item__title">
+                                Vaccine Type
+                            </div>
+                        </div>
+                        <div class="schedule-item__input">
+                            <input class="schedule-item__input-input" type="text" placeholder="Jakarta, Indonesia">
+                        </div>
+                    </li>
+                    <li class="schedule__item schedule-item">
+                        <div class="default-btn">
+                            <div class="default-btn__text">Find</div>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+
+</div>
+			<div class="why">
+    <div class="global-container">
+        <div class="why-head">
+            <p class="why-head__title">
+                Why Vaccine Is Important?
+            </p>
+            <p class="why-head__subtitle">
+                Combined with a handful of model sentence structures, to generate 
+                always free from repetition injected.   
+            </p>
+        </div>
+        <div class="why__wrapper">
+            <form class="why__form">
+                <ul class="why__list">
+                    <li class="why__list--item why-item">
+                        <div class="why-item__input">
+                            <label for="full-name">Full Name</label>
+                            <input id="full-name" class="why-item__input-input" type="text" placeholder="Enter Your name">
+                        </div>
+                    </li>
+                    <li class="why__list--item why-item">
+                        <div class="why-item__input">
+                            <label for="email">Email or phone number</label>
+                            <input id="email" class="why-item__input-input" type="text" placeholder="Enter your email or number">
+                        </div>
+                    </li>
+                    <li class="why__list--item why-item">
+                        <div class="why-item__input">
+                            <label for="address">Address</label>
+                            <input id="address" class="why-item__input-input" type="text" placeholder="Full your Address">
+                        </div>
+                    </li>
+                </ul>
+                <ul class="why__list">
+                    <li class="why__list--item why-item">
+                        <div class="why-item__input">
+                            <label for="full-name">Disease history</label>
+                            <input id="full-name" class="why-item__input-input" type="text" placeholder="Enter diese history">
+                        </div>
+                    </li>
+                    <li class="why__list--item why-item">
+                        <div class="why-item__input">
+                            <label for="full-name">Level Vaccination</label>
+                            <input id="full-name" class="why-item__input-input" type="text" placeholder="Choose Level">
+                        </div>
+                    </li>
+                    <li class="why__list--item why-item">
+                        <div class="why-item__input">
+                            <label for="full-name">Near Vaccination Location</label>
+                            <input id="full-name" class="why-item__input-input" type="text" placeholder="Indonesia">
+                        </div>
+                    </li>
+                </ul>
+                <div class="why__submit">
+                    <button class="default-btn">
+                        <p class="default-btn__text">Vaccine Now</p>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+			<div class="contact">
+    <div class="global-container">
+        <div class="contact__wrapper">
+            <div class="contact__item">
+                <div class="contact__map"></div>
+            </div>
+            <div class="contact__item contact-item">
+                <div class="contact-item__head">
+                    <p class="contact-item__title">
+                        Emergency Contact
+                    </p>
+                    <p class="contact-item__subtitle">
+                        Combined with a handful of model sentence structures,  generate 
+                        always free from repetition injected.
+                    </p>
+                </div>
+                <ul class="contact-item__list">
+                    <li class="contact-item__item contact-card"> 
+                        <div class="contact-card__icon">
+
+                        </div>
+                        <div class="contact-card__head">
+                            <p class="contact-card__title">
+                                Call
+                            </p>
+                            <p class="contact-card__subtitle">
+                                0822 - xxx - xxx
+                            </p>
+                            <button class="default-btn">
+                                <p class="default-btn__text">Call Now</p>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="contact-item__item contact-card"> 
+                        <div class="contact-card__icon">
+
+                        </div>
+                        <div class="contact-card__head">
+                            <p class="contact-card__title">
+                                Chat
+                            </p>
+                            <p class="contact-card__subtitle">
+                                Type fast chat
+                            </p>
+                            <button class="default-btn">
+                                <p class="default-btn__text">Chat</p>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="contact-item__item contact-card"> 
+                        <div class="contact-card__icon">
+
+                        </div>
+                        <div class="contact-card__head">
+                            <p class="contact-card__title">
+                                Go to Near Location
+                            </p>
+                            <p class="contact-card__subtitle">
+                                You can use emergency
+                            </p>
+                            <button class="default-btn">
+                                <p class="default-btn__text">Video Call</p>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="contact-item__item contact-card"> 
+                        <div class="contact-card__icon">
+
+                        </div>
+                        <div class="contact-card__head">
+                            <p class="contact-card__title">
+                                Email
+                            </p>
+                            <p class="contact-card__subtitle">
+                                If you want update
+                            </p>
+                            <button class="default-btn">
+                                <p class="default-btn__text">Send Email</p>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 		</main>
 		<footer class="footer">
-    
+    <div class="global-container">
+        <div class="footer__wrapper">
+            <ul class="footer__list footer-list">
+                <li class="footer-list__item footer-item">
+                    <p class="footer-item__title">
+                        VaccineQu
+                    </p>
+                    <p class="footer-item__text">
+                        Combined with a handful of model sentence 
+                        structures,  generate always free from repetition 
+                        injected chunks as necessary.
+                    </p>
+                </li>
+                <li class="footer-list__item footer-item">
+                    <p class="footer-item__title">
+                        Menu
+                    </p>
+                    <a href="#" class="footer-item__link">Home</a>
+                    <a href="#" class="footer-item__link">Schedule</a>
+                    <a href="#" class="footer-item__link">Quota</a>
+                    <a href="#" class="footer-item__link">Information</a>
+                </li>
+                <li class="footer-list__item footer-item">
+                    <p class="footer-item__title">
+                        Vaccine Type
+                    </p>
+                    <a href="#" class="footer-item__link">Sinovac</a>
+                    <a href="#" class="footer-item__link">Astarzon</a>
+                    <a href="#" class="footer-item__link">Sinopahm</a>
+                </li>
+                <li class="footer-list__item footer-item">
+                    <p class="footer-item__title">
+                        Emergency Contact
+                    </p>
+                    <a href="#" class="footer-item__link">Whatsap</a>
+                    <a href="#" class="footer-item__link">Email</a>
+                    <a href="#" class="footer-item__link">Instagram</a>
+                    <a href="#" class="footer-item__link">Telefon Kantor</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </footer>
 		<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
