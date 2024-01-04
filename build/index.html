@@ -1,27 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+	<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="css/style.css">
-	<title>Site</title>
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>VaccineQu</title>
 </head>
 
 
-<body>
-	<header class="header">
-    
+	<body>
+		<div class="modal">
+    <div class="modal-content">
+        <div class="modal-content__close">
+            <button class="open-modal modal-content__close-btn">X</button>
+        </div>
+        <p class="modal-content__title">
+            Login 
+        </p>
+        <form action="" class="modal-content__form">
+            <div class="modal-content__input-container">
+                <label for="modal-name">Ім'я</label>
+                <input type="text" id="modal-name" class="modal-content__input">
+            </div>
+            <div class="modal-content__input-container">
+                <label for="modal-phone">Телефон</label>
+                <input type="text" id="modal-phone" class="modal-content__input">
+            </div>
+            <div class="modal-content__input-container">
+                <label for="modal-email">Пошта</label>
+                <input type="email" id="modal-email" class="modal-content__input">
+            </div>
+            <div class="modal-content__input-container">
+                <label for="modal-comment">Коментар</label>
+                <input type="text" id="modal-comment" class="modal-content__input modal-content__input--textarea" placeholder="Введіть текст">
+            </div>
+            <div class="modal-content__input-container">
+                <input type="checkbox" id="modal-policies" class="modal-content__input" placeholder="Введіть текст">
+                <label for="modal-policies">Погоджуюся з розсилкою та приймаю Умови договору</label>
+            </div>
+            <div class="modal-content__send-btn">
+                <button class="button">
+                    <p class="button__text">
+                        Відправити
+                    </p>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+		<header class="header">
+    <div class="global-container">
+        <div class="header__wrapper">
+            <div class="header__logo global-logo">
+                <a href="#" class="global-logo--text">VaccineQu</a>
+            </div>
+            <nav class="header__navbar navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__list--item">
+                        <a href="#" class="navbar__list--link">Home</a>
+                    </li>
+                    <li class="navbar__list--item">
+                        <a href="#" class="navbar__list--link">Schedule</a>
+                    </li>
+                    <li class="navbar__list--item">
+                        <a href="#" class="navbar__list--link">Quota</a>
+                    </li>
+                    <li class="navbar__list--item">
+                        <a href="#" class="navbar__list--link">Information</a>
+                    </li>
+                    <li class="navbar__list--item">
+                        <button class="default-btn">
+                            <p class="default-btn__text">Call Center</p>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="burger-menu">
+                
+                <li class="burger-menu__item"></li>
+                <li class="burger-menu__item"></li>
+                <li class="burger-menu__item"></li>
+            </ul>
+        </div>
+    </div>
 </header>
 
-	<main class="main">
-		
-	</main>
-	<footer class="footer"></footer>
+<nav class="mobile-navbar">
+    <ul class="mobile-navbar__list">
+        <li class="mobile-navbar__list--item">
+            <a href="#" class="mobile-navbar__list--link">Home</a>
+        </li>
+        <li class="mobile-navbar__list--item">
+            <a href="#" class="mobile-navbar__list--link">Schedule</a>
+        </li>
+        <li class="mobile-navbar__list--item">
+            <a href="#" class="mobile-navbar__list--link">Quota</a>
+        </li>
+        <li class="mobile-navbar__list--item">
+            <a href="#" class="mobile-navbar__list--link">Information</a>
+        </li>
+        <li class="mobile-navbar__list--item">
+            <button class="default-btn">
+                <p class="default-btn__text">Call Center</p>
+            </button>
+        </li>
+    </ul>
+</nav>
 
-	<script src="js/libs.min.js"></script>
+
+
+
+
+
+		<main class="main">
+			<section class="get-vaccine">
+    <div class="global-container">
+        <div class="get-vaccine__wrapper">
+            <div class="get-vacine__item get-vacine-description">
+                <p class="get-vacine-description__title">Get Your Vaccine, Get Your Health</p>
+                <p class="get-vacine-description__subtitle">
+                    There are many variations of passages of Lorem Ipsum available, 
+                    but the majority have suffered alteration in some form, 
+                    by injected humour
+                </p>
+                <div class="get-vacine-description__btns">
+                    <button class="default-btn">
+                        <p class="default-btn__text">Get Your Vaccine</p>
+                    </button>
+                    <button class="default-btn second-btn  open-modal" onclick="handleModal()">
+                        <p class="default-btn__text second-btn__text">Learn more</p>
+                    </button>
+                </div>
+            </div>
+            <div class="get-vacine__item get-vaccine-images">
+                <div class="get-vaccine-images__item">
+                    <div class="get-vaccine-images__item--subitem"></div>
+                    <div class="get-vaccine-images__item--subitem"></div>
+                </div>
+                <div class="get-vaccine-images__item">
+                    <div class="get-vaccine-images__item--subitem"></div>
+                    <div class="get-vaccine-images__item--subitem"></div>
+                </div>
+                <div class="get-vaccine-images__item">
+                    <div class="get-vaccine-images__item--subitem"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+		</main>
+		<footer class="footer">
+    
+</footer>
+		<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
 
-</body>
+	</body>
 
 </html>

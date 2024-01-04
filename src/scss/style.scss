@@ -1,4 +1,67 @@
-@import 'base/*.scss';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;700&family=Ubuntu:wght@500&display=swap');@import 'base/*.scss';
 @import 'global/*.scss';
 @import '**/_*.scss';
 @import '../components/**/*.scss';
+
+
+body{
+    overflow: hidden;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    padding-block-start: 0;
+    margin-block-start: 0;
+}
+*{
+    font-family: Ubuntu;
+}
+
+.global-container{
+    width: min(91.25rem, 100%);
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.global-logo--text {
+    color: #F75532;
+    font-family: Ubuntu;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.default-btn{
+    width: max-content;
+    border-radius: 0.625rem;
+    background: #FE4610;
+    padding: 1rem 1.81rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: .4s;
+    &__text{
+        color: #fff;
+    }
+    &:hover{
+        background-color: transparent;
+        border: 1px solid #FE4610;
+        transition: .4s;
+    }
+    &:hover &__text{
+        color: #000;
+    }
+}
+
+.second-btn {
+
+    &__text {
+    }
+}
